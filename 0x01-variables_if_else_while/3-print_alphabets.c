@@ -15,15 +15,15 @@ int main(void)
 
 	while (letter <= 'z')
 	{
-		while (letter <= 'Z')
-		{
-			putchar(LetteR);
-			LetteR++;
-		}
 		putchar(letter);
 		letter++;
 	}
 
+	while (letter <= 'Z')
+	{
+		putchar(LetteR);
+		LetteR++;
+	}
 	putchar('\n');
 	return (0);
 }
