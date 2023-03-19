@@ -20,9 +20,9 @@ int main(void)
 				putchar('0' + j);
 				putchar('0' + k);
 
-				if (i != 8 || j != 9 || k != 7)
+				if (i != 7 || j != 8 || k != 9)
 				{
-					if (i != 8 || j != 9 || k != 7)
+					if (i != 7 || j != 8 || k != 9)
 					{
 						putchar(',');
 						putchar(' ');
