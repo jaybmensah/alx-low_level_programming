@@ -1,1 +1,26 @@
-#!/bin/bash
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float f;
+	
+	printf("Size of a char: %lu bytes\n", (unsigned long)sizeof(a));
+  	//printf("Size of short: %lu bytes\n", (unsigned long)sizeof(b));
+  	printf("Size of an int: %lu bytes\n", (unsigned long)sizeof(b));
+  	printf("Size of a long: %lu bytes\n", (unsigned long)sizeof(c));
+  	printf("Size of a long long: %lu bytes\n", (unsigned long)sizeof(d));
+  	printf("Size of a float: %lu bytes\n", (unsigned long)sizeof(f));
+  	/**printf("Size of double: %lu bytes\n", sizeof(double));
+  	printf("Size of long double: %lu bytes\n", sizeof(long double));**/  
+
+	return (0);
+}
