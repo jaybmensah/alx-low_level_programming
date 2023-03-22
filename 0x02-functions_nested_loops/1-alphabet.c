@@ -2,8 +2,8 @@
 
 /**
  * main - this function print_alphabets
- * Written by Jay B
  *
+ * Description: Prints alphabets in lower case
  * Return: Always 0.
  */
 
