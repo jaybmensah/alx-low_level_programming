@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - code that checks for lowercase character.
- *
+ * _isalpha - checks for alphabetic charachter.
+ * @c: is a letter
  * Return: Always 0.
  */
 
@@ -14,6 +14,9 @@ int _isalpha(int c)
 	}
 
 	else
+	{
+		return (0);
+	}
 
-return (0);
+	return (0);
 }
