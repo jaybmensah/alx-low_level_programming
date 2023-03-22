@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - print alphabets in lower case
+ * main - this function print_alphabets
+ * Written by Jay B
  *
  * Return: Always 0.
  */
@@ -18,5 +19,4 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 
-	return (0);
 }
