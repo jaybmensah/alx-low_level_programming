@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_to_98 - prints all natural nums from n to 98 followed by a 
- * a new line.
+ * print_to_98 - prints all natural nums from n to 98 separated by , ending
+ * with new line.
  * @n: holds place of input integer
  *
  * Return: void
  */
+
 void print_to_98(int n)
 {
 	if (n < 98)
@@ -17,3 +18,4 @@ void print_to_98(int n)
 			printf("%d, ", n);
 	printf("98\n");
 }
+
