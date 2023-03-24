@@ -6,6 +6,7 @@
  * @c: is uppercase character
  * Return: Always 0.
  */
+
 int _isupper(int c)
 {
 	if (c >= 65 && c <= 95)
