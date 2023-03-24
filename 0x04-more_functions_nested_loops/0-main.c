@@ -8,11 +8,15 @@
  */
 int main(void)
 {
-	char c;
+	int r;
+	
+	r = _isupper('H');
+	_putchar(r + '0');
+	r = _isupper('o');
+	_putchar(r + '0');
+	r = _isupper(108);
+	_putchar(r + '0');
+	_putchar('\n');
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
 	return (0);
 }
