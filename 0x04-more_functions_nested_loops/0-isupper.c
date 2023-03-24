@@ -10,6 +10,7 @@ int _isupper(int c)
 {
 	if (c >= 65 && c <= 95)
 	{
+		_putchar(c);
 		return (1);
 	}
 
