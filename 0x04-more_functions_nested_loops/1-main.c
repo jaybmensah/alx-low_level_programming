@@ -2,17 +2,19 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - check the code.
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	char c;
 
 	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
+	_putchar(_isdigit(c));
+	c = '9';
+	_putchar(_isdigit(c));
+
 	return (0);
 }
