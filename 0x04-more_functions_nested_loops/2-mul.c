@@ -3,13 +3,13 @@
  * mul - multiplies two integers.
  * @a: is a digit placeholder
  * @b: is a digit placeholder
- * Return: Return c.
+ * Return: product.
  */
 int mul(int a, int b)
 {
-	int a, b;
-	int c;
+	int product;
 
-	c = mul(a, b);
-	return (c);
+	product = a * b;
+
+	return (product);
 }
