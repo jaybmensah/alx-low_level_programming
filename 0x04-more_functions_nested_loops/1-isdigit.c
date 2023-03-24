@@ -8,11 +8,12 @@
 
 int _isdigit(int c)
 {
+	int a;	
+
 	int start = 48;
 	int end = 57;
-	int c;
 
-	for (c = start; c <= end; c++)
+	for (a = start; a <= end; a++)
 	{
 		_putchar(c);
 	}
