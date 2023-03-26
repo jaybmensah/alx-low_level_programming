@@ -5,41 +5,16 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_number(int n)
 {
-	long int i, j;
-	long int num, prueba, aux = 0, aux2 = 0;
-
-	num = 612852475143;
-
-	for (i = 2; i <= num; i++)
+	if (n < 0)
 	{
-		prueba = 0;
-
-		if ((num % i) == 0)
-		{
-			for (j = 2; j <= i; j++)
-			{
-				if (!(j == i))
-				{
-					if ((i % j) == 0)
-					{
-						prueba = 1;
-						break;
-					}
-				}
-			}
-			if (prueba == 0)
-			{
-				aux2 = i;
-				if (aux <= aux2)
-				{
-					aux = aux2;
-					num = num / aux;
-				}
-			}
-		}
+		_putchar('-');
+		n = -n;
 	}
-	printf("%ld\n", aux);
-	return (0);
+	if (n / 10 != 0)
+	{
+		print_number(n / 10);
+	}
+	_putchar(n % 10 + '0');
 }
