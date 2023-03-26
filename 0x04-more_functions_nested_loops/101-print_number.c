@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - largest prime factor.
- *
- * Return: Always 0.
+ * print_number - function that prints an integer.
+ * @n: Placeholder for the integer n.
+ * Return: show the printed number.
  */
 void print_number(int n)
 {
