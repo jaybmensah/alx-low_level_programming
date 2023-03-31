@@ -9,32 +9,17 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j, len = 0, len1 = 0;
-	char *duplicate = dest;
+	int i;
 
-	for (i = 0; dest[i] != '\0' && i < n; i++)
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		len++;
+		dest[i] = src[i];
 	}
 
-	for (j = 0; src[j] != '\0' && j < n; j++)
+	for (i = 0; i < n; i++)
 	{
-		len1++;
-
-		if (j < len)
-		{
-			dest[i] = src[i];
-		}
+		dest[i] = '\0';
 	}
 
-	if (len == 0 && len1 == 0)
-	{
-		char *cpy = dest;
-
-		dest = src;
-		src = cpy;
-		printf("%s\n", src);
-		printf("%s\n", dest);
-	}
-	return (duplicate);
+	return (dest);
 }
