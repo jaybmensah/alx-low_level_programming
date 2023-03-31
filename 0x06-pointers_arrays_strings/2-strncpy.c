@@ -24,12 +24,13 @@ char *_strncpy(char *dest, char *src, int n)
 		if (j < len)
 		{
 			dest[i] = src[i];
-		}	
+		}
 	}
 
 	if (len == 0 && len1 == 0)
 	{
 		char *cpy = dest;
+
 		dest = src;
 		src = cpy;
 		printf("%s\n", src);
