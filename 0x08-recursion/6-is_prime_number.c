@@ -34,7 +34,7 @@ int _sqrt(int n)
  * is_prime_num_fxn - Support fxn for is_prime_number
  * @n : Value of n
  * @i : Value of i.
- * Return : 1 for prime number, 0 otherwise
+ * Return: 1 for prime number, 0 otherwise
  */
 int is_prime_num_fxn(int n, int i)
 {
@@ -53,7 +53,7 @@ int is_prime_num_fxn(int n, int i)
  * integer is a prime number, otherwise return 0.
  * @n : Value of n
  *
- * Return - 1 for prime number, 0 otherwise
+ * Return: 1 for prime number, 0 otherwise
  */
 int is_prime_number(int n)
 {
