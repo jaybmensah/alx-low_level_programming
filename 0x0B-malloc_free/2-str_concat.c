@@ -38,10 +38,10 @@ char *str_concat(char *s1, char *s2)
 	for (countr1 = 0; s1[countr1] != '\0'; countr1++)
 		stPtr[countr1] = s1[countr1];
 
-	for (ctr2 = 0; s2[ctr2 + 1] != '\0'; ctr2++)
+	for (ctr2 = 0; s2[ctr2] != '\0'; ctr2++)
 		stPtr[lenStr1 + ctr2] = s2[ctr2];
 
-	stPtr[ctr2] = '\0';
+	stPtr[ctr2 + countr1 + 1] = '\0';
 
 	return (stPtr);
 }
