@@ -13,11 +13,10 @@ char *str_concat(char *s1, char *s2)
 	int lenStr1, lenStr2, countr1, ctr2;
 
 	/* check if s1 and s2 are NULL */
-	if (s1 == NULL && s2 == NULL)
-	{
+	if (s1 == NULL)
 		s1 = "";
+	if (s2 == NULL)
 		s2 = "";
-	}
 
 	/* find string length1 */
 	for (lenStr1 = 0; s1[lenStr1] != '\0'; lenStr1++)
