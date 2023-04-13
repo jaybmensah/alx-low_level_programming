@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 		{
 			for (ctr2 = 0; ctr2 < countr; ctr2++)
 			{
-				free(my2Darr);
+				free(my2Darr[ctr2]);
 			}
 			free(my2Darr);
 			return (NULL);
