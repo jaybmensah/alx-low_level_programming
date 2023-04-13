@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int lenStr1, lenStr2, countr1, ctr2;
 
 	/* check if s1 and s2 are NULL */
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 	{
 		s1 = "";
 		s2 = "";
