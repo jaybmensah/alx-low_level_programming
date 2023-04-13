@@ -14,6 +14,12 @@ char *_strdup(char *str)
 	char *stPtr;
 	int lenStr, countr;
 
+	/* check if str is null */
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	/* find string length */
 	for (lenStr = 0; str[lenStr] != '\0'; lenStr++)
 		;
@@ -23,12 +29,6 @@ char *_strdup(char *str)
 
 	/* check if stPtr is null */
 	if (stPtr == NULL)
-	{
-		return (NULL);
-	}
-
-	/* check if str is null */
-	if (str == NULL)
 	{
 		return (NULL);
 	}
