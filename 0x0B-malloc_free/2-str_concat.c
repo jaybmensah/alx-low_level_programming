@@ -2,25 +2,22 @@
 #include <stdlib.h>
 
 /**
- * _strdup - A function that returns a pointer to a newly
- * allocated space in memory,
- * which contains a copy of the string given as a parameter.
- * @str: Value of str
- *
- * Return: Pointer to dupliacted string.
+ * str_concat - A function that concatenates two strings.
+ * @s1: Value of s1
+ * @s2: Value of s2
+ * Return: Pointer to concatenated string.
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 	char *stPtr;
 	int lenStr, countr;
 
 	/* find string length */
-	for (lenStr = 0; str[lenStr] != '\0'; lenStr++)
-		;
+	for (lenStr = 0; str[lenStr] != '\0'; lenStr++);
 
 	/* determine the size of stPtr and allocate memory */
 	stPtr = malloc((lenStr * sizeof(char)) + 1);
-
+	
 	/* check if stPtr is null */
 	if (stPtr == NULL)
 	{
