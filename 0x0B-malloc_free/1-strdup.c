@@ -27,6 +27,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	/* check if str is null */
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	/* copy string to new location */
 	for (countr = 0; str[countr] != '\0'; countr++)
 	{
