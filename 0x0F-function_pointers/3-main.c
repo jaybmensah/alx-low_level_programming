@@ -12,15 +12,18 @@
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
+	int num1, num2;
+	char *optr;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
 
-	int num1 = atoi(argv[1]);
-	char optr = argv[2][0];
-	int num2 = atoi(argv[3]);
+	num1 = atoi(argv[1]);
+	optr = argv[2];
+	num2 = atoi(argv[3]);
 
 	if (get_op_func(optr) == NULL || optr[1] != '\0')
 	{
