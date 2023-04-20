@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
+ * get_op_func - Selects appropriate function for computation
+ * @s: Value of s
+ * Return: pointer to the function
  */
 int (*get_op_func(char *s))(int, int)
 {
