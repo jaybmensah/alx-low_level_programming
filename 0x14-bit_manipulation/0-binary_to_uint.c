@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	int strLength = strlen(b);
 	int decimalVal = 1, i;
 
-	if (b == NULL)
+	if (b == NULL || strLength == 0)
 		return (0);
 
 	for (i = (strLength - 1); i >= 0; i--)
