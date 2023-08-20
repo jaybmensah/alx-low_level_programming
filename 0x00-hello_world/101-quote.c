@@ -11,7 +11,8 @@
 
 int main(void)
 {
-	const char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	const char *quote =
+	"and that piece of art is useful\" -Dora Korpar, 2015-10-19\n";
 
 	ssize_t bytes_written = write(STDERR_FILENO, quote, strlen(quote));
 
