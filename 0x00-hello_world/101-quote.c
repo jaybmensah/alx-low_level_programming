@@ -1,24 +1,26 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
+ * main - print to standard error
  *
- * Return: Always 0 (Success)
+ * Return: Always success
  */
 
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
+	const char *quote =
+	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
-printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
-printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
-printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
-printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	ssize_t bytes_written = write(STDERR_FILENO, quote, strlen(quote));
 
-return (0);
+	if (bytes_written == -1)
+	{
+		perror("write");
+		return (1);
+	}
+
+	return (1);
 }
