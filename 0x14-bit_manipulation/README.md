@@ -1,6 +1,6 @@
-# Header 1 0x14. C - Bit Manipulation
+# 0x14. C - Bit Manipulation
 
-# Header 2 Tasks
+## Tasks
 
 - Task 0 Write a function that converts a binary number to an unsigned integer.
 - Task 1 Write a function that prints the binary representation of a number.
