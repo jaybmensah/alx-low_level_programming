@@ -8,6 +8,7 @@
  *
  * Return: Converted number, 0 if no 0 or 1 characters or b is NULL
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int total;
