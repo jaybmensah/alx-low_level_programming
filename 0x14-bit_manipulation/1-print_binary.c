@@ -9,7 +9,7 @@
  * Return: Binary number.
  */
 
-void print_binary(unsigned logn it n)
+void print_binary(unsigned long int n)
 {
 	if (n > 1)
 		print_binary(n >> 1);
