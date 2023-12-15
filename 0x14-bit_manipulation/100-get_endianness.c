@@ -2,7 +2,7 @@
 
 /**
  * get_endianness - get the endianness of the machine
- * 
+ *
  * Return: the endianness of the machine
  */
 
