@@ -9,15 +9,26 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	FILE *fp;
+	int fd;
+	ssize_t length = 0;
 
-	fp = fopen(filename, "w");
-	if (fp == NULL)
-	{
-		perror("fopen");
+	if (!filename)
 		return (-1);
+
+	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	if (fd == -1)
+		return (-1);
+
+	if (text_content)
+	{
+		length = strlen(text_content);
+		if (write(fd, text_content, length) != length)
+		{
+			close(fd);
+			return (-1);
+		}
 	}
-	fputs(text_content, fp);
-	fclose(fp);
-	return (0);
+
+	close(fd);
+	return (1);
 }
